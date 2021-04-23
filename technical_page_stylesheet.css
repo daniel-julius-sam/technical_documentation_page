@@ -53,10 +53,12 @@ nav ul {
 }
 
 nav li {
-    border-left: 1px solid;
+
     border-top: 1px solid;
     padding: 7px;
     padding-left: 20px;
+    
+    
 }
 
 nav a {
@@ -82,12 +84,15 @@ nav a {
         border-right: 1px solid;
         position: fixed;
         top: 0;
+        
+        
     }
 
 
     nav ul {
         max-height: 100vh;
         border-bottom: none;
+        
 
     }
 
