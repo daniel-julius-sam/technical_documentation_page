@@ -1,0 +1,108 @@
+body {
+    margin: 0 0;  
+}
+
+.code-block {
+    background-color: rgb(247,247,247);
+    width: auto;
+    margin-left: 20px;
+    margin-right: 30px;
+    padding: 10px 10px;
+    border-radius: 3px;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 11px;
+}
+
+#mozilla-link {
+    color: blue;
+    background-color: transparent;
+}
+
+#mozilla-link:visited {
+    color: blueviolet;
+    background-color: transparent;
+}
+
+.section {
+    width: 90%;
+    margin: 0 auto;
+}
+
+nav {
+    height: 200px;
+    margin-bottom: 60px;
+}
+
+nav h2 {
+    text-align: center;
+    padding-bottom: 8px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+
+}
+
+nav ul {
+    list-style-type: none;
+    margin-top: 10px;
+    border-top: 1px solid;
+    border-bottom: 3px solid; 
+    padding-left: 0px;
+    overflow-x: hidden;
+    overflow-y: visible;
+    max-height: 200px;
+}
+
+nav li {
+    border-left: 1px solid;
+    border-top: 1px solid;
+    padding: 7px;
+    padding-left: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+#indented-block {
+    margin-left: 40px;
+}
+
+#indented-block li {
+    list-style-type: circle;
+}
+
+
+
+@media (min-width: 500px) {
+    nav {
+        position: absolute;
+        left: 0;
+        height: 100vh;
+        border-right: 1px solid;
+        position: fixed;
+        top: 0;
+    }
+
+
+    nav ul {
+        max-height: 100vh;
+        border-bottom: none;
+
+    }
+
+    #Reference-item {
+        border-bottom: none;
+    }
+
+    #Introduction-item {
+        border-top: none;
+    }
+    body {
+        margin-left: 220px
+    }
+
+    #indented-block {
+        margin-left: 60px;
+    }
+}
