@@ -1,17 +1,63 @@
 <!DOCTYPE html>
-<iframe src="nav_doc.html">
-    
-</iframe>
+
 <html>
     <head>
         <link rel='stylesheet' href='technical_page_stylesheet.css'>
     </head>
 
     <body>
-        
-        <div class='section' id='Introduction'>
-            <h1>JS Documentation</h1>
 
+        <nav>
+            <h2>
+                JS Documentation
+            </h2>
+            <ul>
+                <li  id = 'Introduction-item'>
+                    <a id = 'Introduction-link' href='#Introduction'>Introduction</a>
+                </li>
+                <li>
+                    <a id = 'What you should already know-link' href='#What you should already know'>What you should already know</a>
+                </li>
+                <li>
+                    <a id = 'JavaScript and Java-link' href='#JavaScript and Java'>JavaScript and Java</a>
+                </li>
+                <li>
+                    <a id = 'Hello world-link' href='#Hello world'>Hello world</a>
+                </li>
+                <li>
+                    <a id = 'Variables-link' href='#Variables'>Variables</a>
+                </li>
+                <li>
+                    <a id = 'Declaring variables-link' href='#Declaring variables'>Declaring variables</a>
+                </li>
+                <li>
+                    <a id = 'Variable scope-link' href='#Variable scope'>Variable scope</a>
+                </li>
+                <li>
+                    <a id = 'Global variables-link' href='#Global variables'>Global variables</a>
+                </li>
+                <li>
+                    <a id = 'Constants-link' href='#Constants'>Constants</a>
+                </li>
+                <li>
+                    <a id = 'Data types-link' href='#Data types'>Data types</a>
+                </li>
+                <li>
+                    <a id = 'if...else statement-link' href='#if...else statement'>if...else statement</a>
+                </li>
+                <li>
+                    <a id = 'while statement-link' href='#while statement'>while statement</a>
+                </li>
+                <li>
+                    <a id = 'Function declarations-link' href='#Function declarations'>Function declarations</a>
+                </li>
+                <li  id = 'Reference-item'>
+                    <a id='Reference-link' href='#Reference'>Reference</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class='section' id='Introduction'>
             <h1>
                 Introduction
             </h1>
@@ -47,7 +93,7 @@
             </ul>
         </div>
 
-        <div class='section' id='What you should already know'>
+        <div class='section' id='What-you-should-already-know'>
             <h1>
                 What you should already know
             </h1>
@@ -72,7 +118,7 @@
                     </ul>
         </div>
 
-        <div class='section' id='JavaScript and Java'>
+        <div class='section' id='JavaScript-and-Java'>
             <h2>
                 JavaScript and Java
             </h2>
@@ -101,7 +147,7 @@
                 </p>
         </div>
 
-        <div class='section' id='Hello world'>
+        <div class='section' id='Hello-world'>
             <h2>
                 Hello world
             </h2>
@@ -110,7 +156,7 @@
                     To get started with writing JavaScript, open the Scratchpad and write your first "Hello world" JavaScript code: 
                 </p>
 
-                <p>
+                <p class='code-block'>
                     function greetMe(yourName) { alert("Hello " + yourName); }
                     greetMe("World");
                 </p>
@@ -138,7 +184,7 @@
                 </p>
         </div>
 
-        <div class='section' id='Declaring Variables'>
+        <div class='section' id='Declaring-Variables'>
             <h2>
                 Declaring Variables
             </h2>
@@ -151,7 +197,7 @@
                     With the keyword var. For example, 
                 </p>
 
-                <p>
+                <p class='code-block'>
                     var x = 42.
                 </p>
 
@@ -175,7 +221,7 @@
                     With the keyword let. For example,
                 </p>
 
-                <p>
+                <p class='code-block'>
                     let y = 13.
                 </p>
 
@@ -184,7 +230,7 @@
                 </p>
         </div>
 
-        <div class='section' id='Variable scope'>
+        <div class='section' id='Variable-scope'>
             <h2>
                 Variable scope
             </h2>
@@ -197,7 +243,7 @@
                     JavaScript before ECMAScript 2015 does not have block statement scope; rather, a variable declared within a block is local to the function (or global scope) that the block resides within. For example the following code will log 5, because the scope of x is the function (or global context) within which x is declared, not the block, which in this case is an if statement. 
                 </p>
 
-                <p>
+                <p class='code-block'>
                     if (true) { var x = 5; } console.log(x); // 5
                 </p>
 
@@ -205,13 +251,13 @@
                     This behavior changes, when using the let declaration introduced in ECMAScript 2015. 
                 </p>
 
-                <p>
+                <p class='code-block'>
                     if (true) { let y = 5; } console.log(y); // ReferenceError: y is not
                     defined
                 </p>
         </div>
 
-        <div class='section' id='Global variables'>
+        <div class='section' id='Global-variables'>
             <h2>
                 Global variables
             </h2>
@@ -234,7 +280,7 @@
                     You can create a read-only, named constant with the const keyword. The syntax of a constant identifier is the same as for a variable identifier: it must start with a letter, underscore or dollar sign and can contain alphabetic, numeric, or underscore characters. 
                 </p>
 
-                <p>
+                <p class='code-block'>
                     const PI = 3.14;
                 </p>
 
@@ -250,7 +296,7 @@
                     You cannot declare a constant with the same name as a function or variable in the same scope. For example: 
                 </p>
 
-                <p>
+                <p class='code-block'>
                     // THIS WILL CAUSE AN ERROR function f() {}; const f = 5; // THIS WILL
                     CAUSE AN ERROR ALSO function f() { const g = 5; var g; //statements
                     }
@@ -260,12 +306,12 @@
                     However, object attributes are not protected, so the following statement is executed without problems. 
                 </p>
 
-                <p>
+                <p class='code-block'>
                     const MY_OBJECT = {"key": "value"}; MY_OBJECT.key = "otherValue";
                 </p>
         </div>
 
-        <div class='section' id='Data types'>
+        <div class='section' id='Data-types'>
             <h1>
                 Data types
             </h1>
@@ -278,10 +324,14 @@
                         <li>
                             Six data types that are primitives:
 
+                        </li>
+
+                        <div id='indented-block'>
+
                             <li>
                                 Boolean. true and false.
                             </li>
-    
+
                             <li>
                                 null. A special keyword denoting a null value. Because JavaScript is case-sensitive, null is not the same as Null, NULL, or any other variant. 
                             </li>
@@ -289,7 +339,7 @@
                             <li>
                                 undefined. A top-level property whose value is undefined.
                             </li>
-    
+
                             <li>
                                 Number. 42 or 3.14159.
                             </li>
@@ -297,13 +347,12 @@
                             <li>
                                 String. "Howdy"
                             </li>
-    
+
                             <li>
                                 Symbol (new in ECMAScript 2015). A data type whose instances are unique and immutable. 
                             </li>
 
-                        </li>
-
+                        </div>
                         <li>
                             and Object
                         </li>
@@ -314,7 +363,7 @@
                     </ul>
         </div>
 
-        <div class='section' id='if...else statement'>
+        <div class='section' id='if...else-statement'>
             <h2>
                 if...else statement
             </h2>
@@ -323,7 +372,7 @@
                     Use the if statement to execute a statement if a logical condition is true. Use the optional else clause to execute a statement if the condition is false. An if statement looks as follows: 
                 </p>
 
-                <p>
+                <p class='code-block'>
                     if (condition) { statement_1; } else { statement_2; }
                 </p>
 
@@ -331,7 +380,7 @@
                     You may also compound the statements using else if to have multiple conditions tested in sequence, as follows: 
                 </p>
 
-                <p>
+                <p class='code-block'>
                     if (condition_1) { statement_1; } else if (condition_2) { statement_2;
                     } else if (condition_n) { statement_n; } else { statement_last; }
                 </p>
@@ -340,7 +389,7 @@
                     In the case of multiple conditions only the first logical condition which evaluates to true will be executed. To execute multiple statements, group them within a block statement ({ ... }) . In general, it's good practice to always use block statements, especially when nesting if statements: 
                 </p>
 
-                <p>
+                <p class='code-block'>
                     if (condition) { statement_1_runs_if_condition_is_true;
                     statement_2_runs_if_condition_is_true; } else {
                     statement_3_runs_if_condition_is_false;
@@ -351,7 +400,7 @@
                     It is advisable to not use simple assignments in a conditional expression, because the assignment can be confused with equality when glancing over the code. For example, do not use the following code: 
                 </p>
 
-                <p>
+                <p class='code-block'>
                     if (x = y) { /* statements here */ }
                 </p>
 
@@ -359,12 +408,12 @@
                     If you need to use an assignment in a conditional expression, a common practice is to put additional parentheses around the assignment. For example: 
                 </p>
 
-                <p>
+                <p class='code-block'>
                     if ((x = y)) { /* statements here */ }
                 </p>
         </div>
 
-        <div class='section' id='while statement'>
+        <div class='section' id='while-statement'>
             <h2>
                 while statement
             </h2>
@@ -373,7 +422,7 @@
                     A while statement executes its statements as long as a specified condition evaluates to true. A while statement looks as follows: 
                 </p>
 
-                <p>
+                <p class='code-block'>
                     while (condition) statement
                 </p>
 
@@ -397,7 +446,7 @@
                     The following while loop iterates as long as n is less than three:
                 </p>
 
-                <p>
+                <p class='code-block'>
                     var n = 0; var x = 0; while (n < 3) { n++; x += n; }
                 </p>
 
@@ -424,7 +473,7 @@
                 </p>
         </div>
 
-        <div class='section' id='Function declarations'>
+        <div class='section' id='Function-declarations'>
             <h2>
                 Function declarations
             </h2>
@@ -449,7 +498,7 @@
                     For example, the following code defines a simple function named square: 
                 </p>
 
-                <p>
+                <p class='code-block'>
                     function square(number) { return number * number; }
                 </p>
 
@@ -457,7 +506,7 @@
                     The function square takes one argument, called number. The function consists of one statement that says to return the argument of the function (that is, number) multiplied by itself. The return statement specifies the value returned by the function. 
                 </p>
 
-                <p>
+                <p class='code-block'>
                     return number * number;
                 </p>
 
@@ -476,7 +525,7 @@
         
             <ul>
                 <li>
-                    All the documentation in this page is taken from <a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide'>MDN</a>
+                    All the documentation in this page is taken from <a id='mozilla-link' href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide'>MDN</a>
                 </li>
             </ul>
         </div>
